@@ -1,0 +1,20 @@
+type Deposit @entity {
+  id: ID!
+  addr: Bytes! # address
+  beneficiary: Bytes! # address
+  validator: Bytes! # bytes32
+  amount: BigInt! # uint256
+}
+
+type OwnershipTransferred @entity {
+  id: ID!
+  previousOwner: Bytes! # address
+  newOwner: Bytes! # address
+}
+
+type Withdraw @entity {
+  id: ID!
+  addr: Bytes! # address
+  validator: Bytes! # bytes32
+  amount: BigInt! # uint256
+}

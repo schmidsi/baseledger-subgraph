@@ -15,7 +15,6 @@ dataSources:
       language: wasm/assemblyscript
       entities:
         - Deposit
-        - OwnershipTransferred
         - Withdraw
       abis:
         - name: Staking
@@ -23,8 +22,6 @@ dataSources:
       eventHandlers:
         - event: Deposit(address,address,bytes32,uint256)
           handler: handleDeposit
-        - event: OwnershipTransferred(indexed address,indexed address)
-          handler: handleOwnershipTransferred
         - event: Withdraw(address,bytes32,uint256)
           handler: handleWithdraw
       file: ./src/mapping.ts

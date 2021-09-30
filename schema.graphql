@@ -1,20 +1,22 @@
-type Deposit @entity {
+type Account @entity {
   id: ID!
-  addr: Bytes! # address
-  beneficiary: Bytes! # address
-  validator: Bytes! # bytes32
-  amount: BigInt! # uint256
+  staked: BigInt!
+  # beneficiaryDeposits: [Deposit!]! @derivedFrom(field: "beneficiary")
+  # withdrawals: [Withdrawal!]! @derivedFrom(field: "addr")
 }
 
-type OwnershipTransferred @entity {
+type Deposit @entity {
   id: ID!
-  previousOwner: Bytes! # address
-  newOwner: Bytes! # address
+  sender: Account!
+  beneficiary: Account!
+  validator: Bytes!
+  amount: BigInt!
 }
 
 type Withdraw @entity {
   id: ID!
-  addr: Bytes! # address
-  validator: Bytes! # bytes32
-  amount: BigInt! # uint256
+  sender: Account!
+  beneficiary: Account!
+  validator: Bytes!
+  amount: BigInt!
 }

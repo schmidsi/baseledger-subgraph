@@ -1,4 +1,7 @@
-Contract to index: https://ropsten.etherscan.io/address/0x0B5FC75192F8EE3B4795AB44b3B455aB3d97A6dF#code
+![Top Slide](./slide.jpg)
+
+- Contract to index: https://ropsten.etherscan.io/address/0x0B5FC75192F8EE3B4795AB44b3B455aB3d97A6dF#code
+- [Google Slides](https://docs.google.com/presentation/d/1im1EBClun3rTHRwixKnAmxLc7Gn6ukkZs1Qw3-cuGP8/edit?usp=sharing)
 
 ## Step by step
 

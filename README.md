@@ -101,7 +101,7 @@ withdrawals: [Withdrawal!]! @derivedFrom(field: "beneficiary")
 
 ## Other resources
 
-https://graphiql-online.com/graphiql
-https://github.com/dabit3/building-a-subgraph-workshop
-https://thegraph.com/docs/developer/quick-start
-https://thegraph.com/discord
+- https://graphiql-online.com/graphiql
+- https://github.com/dabit3/building-a-subgraph-workshop
+- https://thegraph.com/docs/developer/quick-start
+- https://thegraph.com/discord

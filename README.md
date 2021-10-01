@@ -72,6 +72,30 @@ type Account @entity {
 }
 ```
 
+### See the result
+
+```graphql
+query MyQuery {
+  accounts(block: { number: 10971355 }) {
+    id
+    staked
+  }
+}
+```
+
+### Ideas for next steps
+
+- Better linking:
+
+```graphql
+deposits: [Deposit!]! @derivedFrom(field: "beneficiary")
+withdrawals: [Withdrawal!]! @derivedFrom(field: "beneficiary")
+```
+
+- Inspect validator
+
+- ???
+
 ## Other resources
 
 https://graphiql-online.com/graphiql
